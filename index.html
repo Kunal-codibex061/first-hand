@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Firsthand Partners</title>
+  <link rel="canonical" href="https://firsthandpartners.com/">
+<meta name="description" content="Recruiting firm for foundational GTM hires. Built by operators, backed by experience.">
+<!-- Rich link previews: og:image must be absolute https on your live host. Set to https://firsthandpartners.com — add www in the four URLs below if that is your canonical site. -->
+<meta property="og:site_name" content="Firsthand Partners">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Operator-Led GTM Advisory &amp; Recruiting">
+<meta property="og:description" content="Recruiting firm for foundational GTM hires. Built by operators, backed by experience.">
+<meta property="og:url" content="https://firsthandpartners.com/">
+<meta property="og:image" content="https://firsthandpartners.com/assets/og-share.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Firsthand Partners">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Operator-Led GTM Advisory &amp; Recruiting">
+<meta name="twitter:description" content="Recruiting firm for foundational GTM hires. Built by operators, backed by experience.">
+<meta name="twitter:image" content="https://firsthandpartners.com/assets/og-share.png">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --white: #FFFFFF;
+    --bg: #F7F6FE;
+    --ink: #10102A;
+    --ink-mid: rgba(16,16,42,0.48);
+    --ink-faint: rgba(16,16,42,0.07);
+    --violet: #5B50F0;
+    --violet-pale: #EDEAFD;
+    --violet-deep: #3D35D4;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { background:var(--white); color:var(--ink); font-family:'Plus Jakarta Sans',sans-serif; -webkit-font-smoothing:antialiased; }
+
+  /* NAV */
+  nav { position:fixed; top:0; left:0; right:0; z-index:100; display:flex; align-items:center; justify-content:space-between; padding:20px 60px; background:rgba(255,255,255,0.92); backdrop-filter:blur(16px); border-bottom:1px solid var(--ink-faint); }
+  .nav-logo { display:flex; align-items:center; gap:11px; text-decoration:none; }
+  .nav-mark { position:relative; width:36px; height:36px; display:flex; align-items:center; justify-content:center; }
+  .nav-mark svg { position:absolute; top:0; left:0; }
+  .nav-mark-text { font-size:12px; font-weight:700; color:var(--violet); position:relative; z-index:1; }
+  .nav-wordmark { font-size:15px; font-weight:700; color:var(--ink); }
+  .nav-links { display:flex; gap:36px; }
+  .nav-links a { font-size:13px; font-weight:500; color:var(--ink-mid); text-decoration:none; transition:color .18s; }
+  .nav-links a:hover { color:var(--ink); }
+  .nav-actions { display:flex; align-items:center; gap:18px; }
+  .nav-text-link { font-size:13px; font-weight:500; color:var(--ink-mid); text-decoration:none; transition:color .18s; white-space:nowrap; }
+  .nav-text-link:hover { color:var(--ink); }
+  .nav-pill-outline { color:var(--violet); font-size:13px; font-weight:600; padding:9px 22px; border-radius:100px; text-decoration:none; border:1.5px solid var(--violet); transition:background .18s, color .18s; }
+  .nav-pill-outline:hover { background:var(--violet); color:#fff; }
+  .nav-pill { background:var(--violet); color:#fff; font-size:13px; font-weight:600; padding:10px 22px; border-radius:100px; text-decoration:none; box-shadow:0 4px 16px rgba(91,80,240,0.28); transition:opacity .18s; }
+  .nav-pill:hover { opacity:.87; }
+  .nav-menu-toggle {
+    display:none;
+    align-items:center;
+    gap:8px;
+    width:44px;
+    height:44px;
+    justify-content:center;
+    border-radius:50%;
+    border:1.5px solid rgba(91,80,240,0.42);
+    background:rgba(91,80,240,0.06);
+    color:var(--violet);
+    font:600 13px/1 'Plus Jakarta Sans',sans-serif;
+    cursor:pointer;
+  }
+  .nav-menu-toggle:hover { background:rgba(91,80,240,0.12); }
+  .nav-menu-toggle-icon { width:18px; height:18px; display:block; }
+  .nav-mobile-menu {
+    display:none;
+    position:absolute;
+    top:100%;
+    right:20px;
+    left:auto;
+    padding:0;
+    margin-top:12px;
+    width:min(66vw, 228px);
+    background:#FFFFFF;
+    border:1px solid rgba(16,16,42,0.06);
+    box-shadow:0 14px 36px rgba(16,16,42,0.10);
+    backdrop-filter:blur(18px);
+    z-index:110;
+    overflow:hidden;
+  }
+  .nav-mobile-menu.open { display:flex; flex-direction:column; gap:0; }
+  .nav-mobile-link {
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:flex-start;
+    width:100%;
+    padding:16px 14px;
+    text-decoration:none;
+    color:var(--ink);
+    font-size:14px;
+    font-weight:600;
+    text-align:left;
+    background:transparent;
+    border:0;
+    border-bottom:1px solid rgba(16,16,42,0.08);
+    transition:color .18s, transform .18s;
+  }
+  .nav-mobile-link:hover,
+  .nav-mobile-link:focus-visible,
+  .nav-mobile-link:active,
+  .nav-mobile-link.is-active {
+    color:var(--violet);
+    transform:translateX(-2px);
+  }
+  .nav-mobile-link:last-child { border-bottom:0; }
+  .nav-mobile-overlay {
+    display:none;
+    position:fixed;
+    top:76px;
+    left:0;
+    right:0;
+    bottom:0;
+    background:rgba(16,16,42,0.10);
+    backdrop-filter:blur(11px) saturate(0.92);
+    -webkit-backdrop-filter:blur(11px) saturate(0.92);
+    z-index:95;
+  }
+  .nav-mobile-overlay.open { display:block; }
+
+  /* HERO */
+  .hero {
+    min-height:100vh; display:grid; grid-template-columns:1fr 1fr;
+    align-items:center; padding:140px 60px 80px; position:relative; overflow:hidden;
+  }
+  .hero-ghost { position:absolute; right:-160px; top:50%; transform:translateY(-50%); width:700px; height:700px; border-radius:50%; border:1.5px solid rgba(91,80,240,0.12); pointer-events:none; }
+  .hero-ghost::before { content:''; position:absolute; top:60px; left:60px; right:60px; bottom:60px; border-radius:50%; border:1px solid rgba(91,80,240,0.07); }
+  .hero-ghost::after { content:''; position:absolute; top:140px; left:140px; right:140px; bottom:140px; border-radius:50%; background:radial-gradient(ellipse, rgba(91,80,240,0.06) 0%, transparent 70%); }
+  .hero-left { position:relative; z-index:1; }
+  .hero-pill { display:inline-flex; align-items:center; gap:8px; background:var(--violet-pale); color:var(--violet); font-size:12px; font-weight:600; padding:7px 16px 7px 10px; border-radius:100px; margin-bottom:32px; border:1px solid rgba(91,80,240,0.18); }
+  .hero-pill-dot { width:20px; height:20px; border-radius:50%; background:var(--violet); display:flex; align-items:center; justify-content:center; font-size:9px; color:#fff; font-weight:700; }
+  .hero-headline { font-size:clamp(40px,5.5vw,68px); font-weight:800; letter-spacing:-2.5px; line-height:1.06; }
+  .hero-headline .ghost-word { -webkit-text-stroke:2px var(--violet); color:transparent; }
+  .hero-headline .violet { color:var(--violet); }
+  .hero-sub { margin-top:24px; font-size:16px; font-weight:400; line-height:1.7; color:var(--ink-mid); max-width:460px; }
+  .hero-actions { margin-top:40px; display:flex; gap:14px; }
+  .btn-violet { background:var(--violet); color:#fff; font-size:14px; font-weight:600; padding:14px 32px; border-radius:100px; text-decoration:none; box-shadow:0 6px 22px rgba(91,80,240,0.32); transition:opacity .18s; }
+  .btn-violet:hover { opacity:.87; }
+  .btn-outline { color:var(--ink); font-size:14px; font-weight:600; padding:14px 32px; border-radius:100px; border:1.5px solid var(--ink-faint); text-decoration:none; transition:border-color .18s; }
+  .btn-outline:hover { border-color:var(--ink-mid); }
+
+  /* Hero right — feature cards (no emoji icons) */
+  .hero-right { position:relative; z-index:1; padding-left:40px; display:flex; flex-direction:column; gap:16px; }
+  .feature-pill-card {
+    background:#fff; border:1.5px solid var(--ink-faint); border-radius:16px;
+    padding:24px 28px; display:flex; gap:16px; align-items:flex-start;
+    box-shadow:0 2px 20px rgba(16,16,42,0.05);
+    transition:border-color .2s, transform .2s;
+  }
+  .feature-pill-card:hover { border-color:var(--violet); transform:translateX(-6px); }
+  .fp-icon { width:40px; height:40px; border-radius:12px; background:var(--violet-pale); flex-shrink:0; display:flex; align-items:center; justify-content:center; }
+  .fp-title { font-size:15px; font-weight:700; color:var(--ink); margin-bottom:4px; }
+  .fp-body { font-size:13px; font-weight:400; line-height:1.6; color:var(--ink-mid); }
+
+  /* TRUST */
+  .trust-row { background:var(--bg); padding:26px 60px; display:flex; align-items:center; gap:32px; border-top:1px solid var(--ink-faint); border-bottom:1px solid var(--ink-faint); }
+  .trust-label { font-size:11px; font-weight:600; color:var(--ink-mid); white-space:nowrap; }
+  .trust-logos { display:flex; gap:36px; }
+  .trust-logo { font-size:13px; font-weight:700; color:rgba(16,16,42,0.28); }
+
+  /* ADVISORS */
+  .advisors-section { padding:100px 60px; }
+  .adv-intro { display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:end; margin-bottom:80px; }
+  .section-tag { display:inline-flex; align-items:center; gap:8px; background:var(--violet-pale); color:var(--violet); font-size:11px; font-weight:600; padding:6px 14px; border-radius:100px; margin-bottom:20px; }
+  .section-title { font-size:clamp(32px,4vw,50px); font-weight:800; letter-spacing:-1.5px; line-height:1.06; }
+  .section-sub { font-size:15px; font-weight:400; line-height:1.7; color:var(--ink-mid); max-width:500px; margin-top:12px; }
+  .adv-what { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  .adv-what-block { border:1.5px solid var(--ink-faint); border-radius:14px; padding:24px; transition:border-color .2s; }
+  .adv-what-block:hover { border-color:rgba(91,80,240,0.3); }
+  .awb-icon-wrap { width:36px; height:36px; border-radius:10px; background:var(--violet-pale); display:flex; align-items:center; justify-content:center; margin-bottom:14px; }
+  .awb-title { font-size:15px; font-weight:700; color:var(--ink); margin-bottom:6px; }
+  .awb-body { font-size:13px; font-weight:400; line-height:1.65; color:var(--ink-mid); }
+
+  /* Advisor cards — photo + name + title only */
+  .adv-large-grid { display:grid; grid-template-columns:repeat(5,1fr); gap:14px; }
+
+  .adv-large-card {
+    border-radius:16px; overflow:hidden;
+    border:1.5px solid var(--ink-faint);
+    display:flex; flex-direction:column;
+    transition:border-color .22s, transform .22s;
+    background:var(--bg);
+  }
+  .adv-large-card:hover { border-color:var(--violet); transform:translateY(-4px); }
+  .adv-photo {
+    aspect-ratio:4/5; overflow:hidden; max-height:220px;
+    filter:grayscale(100%) contrast(1.05);
+    background:#D0CCCA;
+    position:relative;
+  }
+  .adv-photo img { width:100%; height:100%; object-fit:cover; object-position:center top; display:block; }
+  .adv-photo::after { content:''; position:absolute; bottom:0; left:0; right:0; height:40%; background:linear-gradient(transparent, rgba(247,246,254,0.5)); }
+  .adv-body { padding:16px 18px 20px; display:flex; flex-direction:column; gap:4px; }
+  .adv-name { font-size:15px; font-weight:700; color:var(--ink); }
+  .adv-title { font-size:12px; font-weight:500; color:var(--violet); }
+
+  /* Company logos row */
+  .adv-logos-section { margin-top:56px; padding-top:40px; border-top:1px solid var(--ink-faint); }
+  .adv-logos-label { font-size:10px; font-weight:600; letter-spacing:2px; text-transform:uppercase; color:var(--ink-mid); margin-bottom:20px; }
+  .adv-logos-row { display:flex; gap:44px; flex-wrap:wrap; align-items:center; }
+  .adv-logo { font-size:14px; font-weight:700; color:rgba(16,16,42,0.22); letter-spacing:0.5px; }
+
+  /* HOW WE WORK — 4 quadrants */
+  .section { padding:100px 60px; }
+  .section-bg { background:var(--bg); }
+  .how-quadrants {
+    display:grid; grid-template-columns:1fr 1fr; grid-template-rows:1fr 1fr;
+    gap:16px; margin-top:52px;
+  }
+  .how-quad {
+    background:#fff; border-radius:20px; padding:40px 44px;
+    border:1.5px solid var(--ink-faint);
+    transition:border-color .2s, transform .2s;
+    display:flex; flex-direction:column;
+  }
+  .how-quad:hover { border-color:rgba(91,80,240,0.22); transform:translateY(-2px); }
+  .hq-num { font-size:11px; font-weight:700; letter-spacing:2px; color:var(--violet); margin-bottom:20px; }
+  .hq-title { font-size:20px; font-weight:800; letter-spacing:-0.5px; color:var(--ink); margin-bottom:14px; line-height:1.2; }
+  .hq-body { font-size:14px; font-weight:400; line-height:1.72; color:var(--ink-mid); }
+
+  /* TESTIMONIALS */
+  .testi-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:48px; }
+  .testi-card { background:#fff; border-radius:16px; padding:32px 28px; border:1.5px solid var(--ink-faint); display:flex; flex-direction:column; gap:18px; transition:border-color .2s; }
+  .testi-card:hover { border-color:rgba(91,80,240,0.25); }
+  .testi-bar { width:20px; height:2.5px; border-radius:2px; background:var(--violet); opacity:0.5; }
+  .testi-quote { font-size:14px; font-weight:400; line-height:1.75; color:var(--ink); font-style:italic; }
+  .testi-attr { font-size:11px; font-weight:600; color:var(--ink-mid); }
+
+  /* APPLY — even two-panel layout */
+  .apply-section {
+    background:var(--ink); padding:100px 60px;
+    display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:start;
+  }
+  .apply-section-tag { display:inline-flex; align-items:center; gap:8px; background:rgba(91,80,240,0.22); color:rgba(160,150,255,1); font-size:11px; font-weight:600; padding:6px 14px; border-radius:100px; margin-bottom:20px; }
+  .apply-title { font-size:clamp(32px,3.5vw,46px); font-weight:800; letter-spacing:-1.5px; line-height:1.06; color:#fff; }
+  .apply-sub { font-size:15px; font-weight:400; line-height:1.7; color:rgba(255,255,255,0.45); margin-top:14px; max-width:400px; }
+  .apply-options { display:flex; flex-direction:column; gap:12px; margin-top:36px; }
+  .apply-option { display:flex; gap:14px; align-items:center; padding:18px 22px; border-radius:12px; background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.08); text-decoration:none; transition:background .18s, border-color .18s; }
+  .apply-option:hover { background:rgba(91,80,240,0.15); border-color:rgba(91,80,240,0.35); }
+  .ao-icon { width:36px; height:36px; border-radius:10px; background:rgba(91,80,240,0.25); display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+  .ao-title { font-size:15px; font-weight:700; color:#fff; }
+  .ao-body { font-size:12px; font-weight:400; color:rgba(255,255,255,0.45); margin-top:2px; }
+  .ao-arrow { margin-left:auto; color:rgba(255,255,255,0.3); font-size:16px; font-weight:600; }
+
+  /* Apply form — fills its column evenly */
+  .apply-form { display:flex; flex-direction:column; gap:14px; }
+  .apply-form-row { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  .form-field { display:flex; flex-direction:column; gap:7px; }
+  .form-label { font-size:11px; font-weight:600; letter-spacing:0.5px; text-transform:uppercase; color:rgba(255,255,255,0.4); }
+  .form-input {
+    background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1);
+    border-radius:10px; padding:13px 16px; color:#fff;
+    font-family:'Plus Jakarta Sans',sans-serif; font-size:14px;
+    outline:none; transition:border-color .18s;
+  }
+  .form-input::placeholder { color:rgba(255,255,255,0.25); }
+  .form-input:focus { border-color:rgba(91,80,240,0.6); }
+  .form-submit { background:var(--violet); color:#fff; font-family:'Plus Jakarta Sans',sans-serif; font-size:14px; font-weight:600; padding:15px 32px; border-radius:100px; border:none; cursor:pointer; width:100%; margin-top:6px; box-shadow:0 6px 20px rgba(91,80,240,0.35); transition:opacity .18s; }
+  .form-submit:hover { opacity:.87; }
+
+  /* BOTTOM STATEMENT */
+  .bottom-statement {
+    background:var(--bg); padding:80px 60px;
+    display:flex; flex-direction:column; gap:56px; align-items:stretch;
+  }
+  .bs-top {
+    display:flex; justify-content:space-between; align-items:center; gap:40px; width:100%;
+  }
+  .bs-text { font-size:clamp(28px,4vw,48px); font-weight:800; letter-spacing:-1.5px; line-height:1.06; max-width:600px; }
+  .bs-text .violet { color:var(--violet); }
+  .bs-right { display:flex; flex-direction:column; gap:12px; align-items:flex-end; flex-shrink:0; }
+
+  /* Team — below BUILT BY OPERATORS (reference layout) */
+  .team-op-section { width:100%; }
+  .team-op-grid {
+    display:grid; grid-template-columns:repeat(5,1fr); gap:20px; width:100%;
+  }
+  .team-op-card {
+    background:rgba(16,16,42,0.08); border:1.5px solid transparent; border-radius:12px;
+    overflow:hidden; padding-bottom:20px;
+    transition:border-color .2s;
+    min-width:0;
+    display:block;
+    text-decoration:none;
+    color:inherit;
+    cursor:pointer;
+  }
+  .team-op-card:hover { border-color:var(--violet); }
+  .team-op-card:focus-visible {
+    outline:2px solid var(--violet);
+    outline-offset:3px;
+    border-color:var(--violet);
+  }
+  /* Height from width (4:5) — avoids aspect-ratio + max-height grid bugs that shift cover crop */
+  .team-op-photo {
+    position:relative; width:100%; height:0; padding-bottom:125%;
+    overflow:hidden; background:#e4e6ef;
+  }
+  .team-op-photo img {
+    position:absolute; left:0; top:0; width:100%; height:100%;
+    object-fit:cover; object-position:center center;
+    display:block; filter:grayscale(100%) contrast(1.04);
+  }
+  .team-op-photo::after {
+    content:''; position:absolute; inset:0; pointer-events:none;
+    background:linear-gradient(to bottom, transparent 55%, rgba(16,16,42,0.14) 100%);
+  }
+  .team-op-name-row {
+    display:flex; align-items:flex-end; flex-wrap:wrap; gap:8px;
+    margin:15px 15px 5px 15px;
+  }
+  .team-op-name { font-size:15px; font-weight:700; color:#333; line-height:1.25; }
+  .team-op-badge {
+    font-size:10px; font-weight:600; letter-spacing:0.02em; color:#8b8b9a;
+    line-height:1.25;
+  }
+  .team-op-role {
+    font-size:0.85rem; font-weight:500; color:#5A55D2; margin-left:15px; line-height:1.4;
+  }
+  .team-op-card--andmore {
+    padding-bottom:0;
+    display:flex;
+    flex-direction:column;
+    height:100%;
+  }
+  .team-op-card--andmore .team-op-photo {
+    flex:1;
+    height:100%;
+    padding-bottom:0;
+    min-height:0;
+    background:transparent;
+    border:2px dotted rgba(91,80,240,0.45);
+    border-radius:12px;
+  }
+  .team-op-card--andmore .team-op-photo::after { display:none; }
+  .team-op-andmore-inner {
+    position:absolute; left:0; top:0; width:100%; height:100%;
+    display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px;
+  }
+  .team-op-andmore-plus { font-size:28px; font-weight:500; color:var(--violet); line-height:1; position:relative; z-index:1; }
+  .team-op-andmore-label { font-size:14px; font-weight:700; color:var(--violet); letter-spacing:-0.01em; position:relative; z-index:1; }
+  .team-op-card--andmore:hover .team-op-photo { transform:translateY(-2px); background:rgba(91,80,240,0.04); }
+
+  /* Advisor logos — label on first line, company names on the next */
+  .team-op-advisor-strip {
+    width:auto; margin-top:80px; margin-left:-60px; margin-right:-60px;
+    padding:56px 60px 36px; border-top:1px solid var(--ink-faint);
+    display:flex; flex-direction:column; align-items:stretch; gap:20px;
+  }
+  .team-op-advisor-label {
+    margin:0; font-size:12px; font-weight:800; letter-spacing:0.1em; text-transform:uppercase;
+    color:var(--ink-mid); line-height:1.35;
+  }
+  .team-op-advisor-names {
+    display:flex; flex-wrap:wrap; align-items:center; justify-content:flex-start;
+    gap:14px 28px; width:100%;
+    list-style:none; margin:0; padding:0;
+  }
+  .team-op-advisor-name {
+    font-size:13px; font-weight:800; letter-spacing:0.5px;
+    color:rgba(16,16,42,0.28); white-space:nowrap;
+  }
+
+  .bs-btn { background:var(--violet); color:#fff; font-size:13px; font-weight:700; padding:13px 32px; border-radius:100px; text-decoration:none; white-space:nowrap; box-shadow:0 4px 16px rgba(91,80,240,0.28); }
+  .bs-email { font-size:12px; color:var(--ink-mid); }
+  .bs-stealth-link2 { font-size:11px; font-weight:600; color:var(--violet); opacity:0.65; text-decoration:none; transition:opacity .18s; border:1px dashed rgba(91,80,240,0.3); padding:6px 14px; border-radius:100px; }
+
+  /* FOOTER */
+  footer { padding:32px 60px; border-top:1px solid var(--ink-faint); display:flex; justify-content:space-between; align-items:center; }
+  .footer-logo { display:flex; align-items:center; gap:10px; }
+  .footer-circle { width:30px; height:30px; border-radius:50%; border:1.5px solid rgba(91,80,240,0.35); display:flex; align-items:center; justify-content:center; font-size:10px; font-weight:700; color:var(--violet); }
+  .footer-name { font-size:13px; font-weight:700; }
+  .footer-copy { font-size:12px; color:var(--ink-mid); }
+
+  @keyframes fadeUp { from{opacity:0;transform:translateY(22px)} to{opacity:1;transform:translateY(0)} }
+  .hero-pill { animation:fadeUp .6s ease both .1s; }
+  .hero-headline { animation:fadeUp .6s ease both .2s; }
+  .hero-sub { animation:fadeUp .6s ease both .3s; }
+  .hero-actions { animation:fadeUp .6s ease both .4s; }
+  .hero-right { animation:fadeUp .7s ease both .3s; }
+
+  /* V-B: Card selector + expandable form */
+  .vb-apply { background:var(--bg); padding:100px 60px; }
+  .vb-header { text-align:center; margin-bottom:56px; }
+  .vb-tag { display:inline-flex; align-items:center; gap:8px; background:var(--violet-pale); color:var(--violet); font-size:11px; font-weight:600; padding:6px 14px; border-radius:100px; margin-bottom:20px; }
+  .vb-title { font-size:clamp(32px,4vw,50px); font-weight:800; letter-spacing:-1.5px; line-height:1.06; }
+  .vb-sub { font-size:16px; font-weight:400; line-height:1.7; color:var(--ink-mid); margin-top:12px; }
+  .vb-cards { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+  .vb-card { border:2px solid var(--ink-faint); border-radius:20px; padding:36px 32px; cursor:pointer; transition:all .22s; background:#fff; }
+  .vb-card:hover { border-color:rgba(91,80,240,0.3); transform:translateY(-2px); }
+  .vb-card.selected { border-color:var(--violet); background:var(--violet-pale); }
+  .vb-card-icon { width:44px; height:44px; border-radius:14px; background:var(--violet-pale); display:flex; align-items:center; justify-content:center; margin-bottom:20px; transition:background .2s; }
+  .vb-card.selected .vb-card-icon { background:var(--violet); }
+  .vb-card-label { font-size:11px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:var(--violet); margin-bottom:8px; }
+  .vb-card-title { font-size:20px; font-weight:800; letter-spacing:-0.5px; color:var(--ink); margin-bottom:10px; }
+  .vb-card-body { font-size:13px; font-weight:400; line-height:1.65; color:var(--ink-mid); }
+  /* Expandable form area */
+  .vb-form-area { margin-top:24px; background:#fff; border:1.5px solid var(--ink-faint); border-radius:20px; overflow:hidden; max-height:0; transition:max-height .55s ease, padding .3s ease; }
+  .vb-form-area.open { max-height:2400px; }
+  .vb-form-inner { padding:44px 52px; display:flex; flex-direction:column; gap:28px; }
+  .vb-form-left { display:contents; }
+  .vb-form-right { display:flex; flex-direction:column; gap:13px; }
+  .vb-label { font-size:11px; font-weight:600; letter-spacing:0.5px; text-transform:uppercase; color:var(--ink-mid); margin-bottom:6px; display:block; }
+  .vb-input { width:100%; background:var(--bg); border:1.5px solid var(--ink-faint); border-radius:10px; padding:12px 15px; color:var(--ink); font-family:'Plus Jakarta Sans',sans-serif; font-size:14px; outline:none; transition:border-color .18s; }
+  .vb-input:focus { border-color:var(--violet); }
+  .vb-input::placeholder { color:rgba(16,16,42,0.25); }
+  .vb-select { width:100%; background:var(--bg); border:1.5px solid var(--ink-faint); border-radius:10px; padding:12px 15px; color:var(--ink); font-family:'Plus Jakarta Sans',sans-serif; font-size:14px; outline:none; appearance:none; cursor:pointer; }
+  .vb-textarea { width:100%; background:var(--bg); border:1.5px solid var(--ink-faint); border-radius:10px; padding:12px 15px; color:var(--ink); font-family:'Plus Jakarta Sans',sans-serif; font-size:14px; outline:none; resize:vertical; min-height:80px; }
+  .vb-textarea::placeholder { color:rgba(16,16,42,0.25); }
+  .vb-form-row { display:grid; grid-template-columns:1fr 1fr; gap:13px; }
+  .vb-submit { background:var(--violet); color:#fff; font-family:'Plus Jakarta Sans',sans-serif; font-size:14px; font-weight:600; padding:14px 32px; border-radius:100px; border:none; cursor:pointer; width:100%; box-shadow:0 6px 20px rgba(91,80,240,0.3); transition:opacity .18s; }
+  .vb-submit:hover { opacity:.87; }
+  .vb-form-panel { display:none; }
+  .vb-form-panel.active { display:contents; }
+
+
+  .stealth-cta-box { background:rgba(91,80,240,0.06); border:1.5px dashed rgba(91,80,240,0.28); border-radius:12px; padding:22px 24px; margin:4px 0 8px; display:flex; flex-direction:column; gap:8px; }
+  .stealth-cta-label { font-size:11px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--violet); opacity:0.75; }
+  .stealth-cta-heading { font-size:17px; font-weight:700; color:var(--ink); line-height:1.3; }
+  .stealth-cta-sub { font-size:14px; color:var(--ink-mid); line-height:1.65; }
+  .stealth-cta-link { display:inline-flex; align-items:center; gap:6px; margin-top:6px; font-size:14px; font-weight:700; color:var(--violet); text-decoration:none; }
+  .stealth-cta-link:hover { text-decoration:underline; }
+  .bs-stealth-link { font-size:11px; font-weight:600; color:var(--violet); opacity:0.65; text-decoration:none; transition:opacity .18s; border:1px dashed rgba(91,80,240,0.3); padding:6px 14px; border-radius:100px; }
+  .bs-stealth-link:hover { opacity:1; }
+
+  /* ═══════════════════════════════════════════════════
+     RESPONSIVE — SMALL MOBILE (≤420px)
+  ═══════════════════════════════════════════════════ */
+
+  /* ══════════════════════════════════════════════
+     TABLET ≤1024px
+  ══════════════════════════════════════════════ */
+  @media (max-width: 1024px) {
+    nav { padding: 16px 28px; }
+    .hero { padding: 120px 40px 60px; }
+    .advisors-section, .section { padding: 72px 40px; }
+    .apply-section { padding: 72px 40px; gap: 48px; }
+    .bottom-statement { padding: 60px 40px; gap: 44px; }
+    .team-op-advisor-strip { margin-left: -40px; margin-right: -40px; padding-left: 40px; padding-right: 40px; }
+    .team-op-grid { grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    footer { padding: 28px 40px; }
+    .trust-row { padding: 22px 40px; }
+    .vb-form-inner { padding: 36px 40px; gap: 24px; }
+  }
+
+  /* ══════════════════════════════════════════════
+     GRID SWITCH: 5-col → 2-col at 860px
+  ══════════════════════════════════════════════ */
+  @media (max-width: 860px) {
+    .adv-large-grid {
+      grid-template-columns: repeat(2, 1fr) !important;
+      gap: 12px;
+    }
+    .adv-photo {
+      aspect-ratio: unset !important;
+      height: 200px;
+    }
+    .team-op-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  }
+
+  /* ══════════════════════════════════════════════
+     MOBILE ≤768px
+  ══════════════════════════════════════════════ */
+  @media (max-width: 768px) {
+    nav { padding: 12px 16px; }
+    .nav-logo { gap: 9px; }
+    .nav-mark,
+    .nav-mark svg { width: 40px; height: 40px; }
+    .nav-actions > .nav-text-link,
+    .nav-actions > .nav-pill-outline,
+    .nav-actions > .nav-pill { display:none; }
+    .nav-menu-toggle {
+      display:inline-flex;
+      width:40px;
+      height:40px;
+    }
+    .nav-menu-toggle-icon { width:16px; height:16px; }
+    .nav-wordmark {
+      font-size: 15px;
+      line-height: 1.06;
+      letter-spacing: -0.01em;
+    }
+
+    .hero { grid-template-columns: 1fr; min-height: auto; padding: 100px 20px 48px; gap: 32px; }
+    .hero-ghost { display: none; }
+    .hero-right { display: none; }
+    .hero-headline { font-size: clamp(34px, 9vw, 50px); letter-spacing: -1.5px; }
+    .hero-sub { font-size: 15px; max-width: 100%; }
+    .hero-actions { flex-direction: column; gap: 10px; }
+    .btn-violet, .btn-outline { text-align: center; }
+
+    .trust-row { padding: 18px 20px; flex-wrap: wrap; gap: 14px; }
+    .trust-logos { flex-wrap: wrap; gap: 16px; }
+
+    .advisors-section { padding: 56px 20px 64px; }
+    .adv-intro { grid-template-columns: 1fr; gap: 32px; margin-bottom: 40px; }
+    .adv-what { grid-template-columns: 1fr; gap: 12px; }
+    .adv-large-grid {
+      grid-template-columns: repeat(2, 1fr) !important;
+      gap: 10px;
+    }
+    .adv-photo { height: 180px; }
+    .adv-name { font-size: 13px; }
+    .adv-title { font-size: 11px; }
+    .adv-body { padding: 10px 12px 14px; }
+    .adv-logos-row { gap: 20px; }
+
+    .section { padding: 56px 20px; }
+    .section-title { font-size: clamp(26px, 7vw, 38px); }
+    .how-quadrants { grid-template-columns: 1fr; grid-template-rows: auto; gap: 12px; margin-top: 32px; }
+    .how-quad { padding: 28px 24px; }
+
+    .testi-grid { grid-template-columns: 1fr; gap: 12px; margin-top: 32px; }
+
+    .apply-section { grid-template-columns: 1fr; padding: 56px 20px; gap: 36px; }
+    .apply-form-row { grid-template-columns: 1fr; gap: 12px; }
+
+    .vb-cards { grid-template-columns: 1fr; gap: 10px; }
+    .vb-card { padding: 24px 20px; }
+    .vb-form-inner { padding: 24px 20px; gap: 20px; }
+    .vb-form-row { grid-template-columns: 1fr; gap: 10px; }
+
+    .bottom-statement { flex-direction: column; align-items: flex-start; padding: 48px 20px; gap: 32px; }
+    .bs-top { flex-direction: column; align-items: flex-start; gap: 24px; }
+    .bs-right { align-items: flex-start; }
+    .bs-text { font-size: clamp(24px, 7vw, 38px); }
+    .team-op-grid { gap: 12px; }
+    .team-op-name { font-size: 14px; }
+    .team-op-role { font-size: 0.8rem; }
+    .team-op-advisor-strip {
+      margin-top: 56px;
+      margin-left: -20px; margin-right: -20px;
+      padding: 44px 20px 28px; gap: 18px;
+    }
+    .team-op-advisor-names { gap: 12px 20px; }
+
+    footer { flex-direction: column; align-items: flex-start; gap: 12px; padding: 24px 20px; }
+  }
+
+  /* ══════════════════════════════════════════════
+     SMALL MOBILE ≤420px
+  ══════════════════════════════════════════════ */
+  @media (max-width: 420px) {
+    .hero-headline { font-size: 32px; }
+    .adv-large-grid { gap: 8px; }
+    .adv-photo { height: 160px; }
+    .vb-cards { grid-template-columns: 1fr; }
+    .team-op-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html" data-route="home">
+    <div class="nav-mark">
+      <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+        <circle cx="18" cy="18" r="16.5" stroke="#5B50F0" stroke-width="1.5" opacity="0.35"/>
+        <circle cx="18" cy="18" r="9" stroke="#5B50F0" stroke-width="1" opacity="0.15"/>
+      </svg>
+      <span class="nav-mark-text">FP</span>
+    </div>
+    <span class="nav-wordmark">Firsthand Partners</span>
+  </a>
+  <div class="nav-actions">
+    <a class="nav-text-link" href="firsthand-Opearting-advisors.html" data-route="advisors">Operating Advisors</a>
+    <a class="nav-pill-outline" href="https://stealthjobs.co" target="_blank" rel="noopener noreferrer">Jobs</a>
+    <a class="nav-pill" href="#get-started" data-route="work-with-us">Work With Us</a>
+    <button class="nav-menu-toggle" type="button" aria-expanded="false" aria-controls="nav-mobile-menu" id="nav-menu-toggle">
+      <svg class="nav-menu-toggle-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+  </div>
+  <div class="nav-mobile-menu" id="nav-mobile-menu" aria-hidden="true">
+    <a class="nav-mobile-link" href="firsthand-Opearting-advisors.html" data-route="advisors">Operating Advisors</a>
+    <a class="nav-mobile-link" href="https://stealthjobs.co" target="_blank" rel="noopener noreferrer">Jobs</a>
+    <a class="nav-mobile-link" href="#get-started" data-route="work-with-us">Work With Us</a>
+  </div>
+  <div class="nav-mobile-overlay" id="nav-mobile-overlay" aria-hidden="true"></div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-ghost"></div>
+  <div class="hero-left">
+    <div class="hero-pill">
+      <div class="hero-pill-dot">FP</div>
+      Operator-Led GTM Advisory & Recruiting
+    </div>
+    <h1 class="hero-headline">
+      We've done<br>
+      the <span class="ghost-word">job.</span><br>
+      We know<br>
+      <span class="violet">who can.</span>
+    </h1>
+    <p class="hero-sub">A search firm built by operators who have held the seat and seen the full arc of growth — uniquely positioned to assess current needs, evaluate the right talent, and help founders see what they need to hire next before they need to ask.</p>
+    <div class="hero-actions">
+      <a class="btn-violet" href="#get-started" data-route="work-with-us">Work With Us</a>
+      <a class="btn-outline" href="#get-started" data-route="work-with-us">Join the Network</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="feature-pill-card">
+      <div class="fp-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="7" width="14" height="10" rx="1.5" stroke="#5B50F0" stroke-width="1.5"/><path d="M7 7V5.5A1.5 1.5 0 018.5 4h3A1.5 1.5 0 0113 5.5V7" stroke="#5B50F0" stroke-width="1.5"/><line x1="3" y1="11" x2="17" y2="11" stroke="#5B50F0" stroke-width="1.5"/></svg></div>
+      <div>
+        <div class="fp-title">Operator-run searches</div>
+        <div class="fp-body">Our operators get inside the business to scope exactly what's needed today — and what will be needed to scale</div>
+      </div>
+    </div>
+    <div class="feature-pill-card">
+      <div class="fp-icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="8" cy="8" r="5.5" stroke="#5B50F0" stroke-width="1.4"/><path d="M12.5 12.5L16 16" stroke="#5B50F0" stroke-width="1.4" stroke-linecap="round"/></svg></div>
+      <div>
+        <div class="fp-title">Advisor-backed evaluation</div>
+        <div class="fp-body">Operators who've led the function you're hiring for define what good looks like — and what great demands.</div>
+      </div>
+    </div>
+    <div class="feature-pill-card">
+      <div class="fp-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 9l4-3 3 2 3-2 4 3" stroke="#5B50F0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 9v5a1 1 0 001 1h14a1 1 0 001-1V9" stroke="#5B50F0" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+      <div>
+        <div class="fp-title">Long-term partnership</div>
+        <div class="fp-body">We've seen this story before. We know what comes next — and we're with you through every chapter of it.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ADVISORS -->
+<div class="advisors-section">
+  <div class="adv-intro">
+    <div>
+      <div class="section-tag">Advisory Network</div>
+      <h2 class="section-title">Operators who've<br>held the seat.</h2>
+      <p class="section-sub">Firsthand Partners works with established operators who have held the roles they advise on — embedding directly alongside founders and growth-stage leadership teams to understand the business, solve real problems, and scope the talent needed to scale.</p>
+      
+    </div>
+    <div class="adv-what">
+      <div class="adv-what-block">
+        <div class="awb-icon-wrap"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="9" cy="9" r="7" stroke="#5B50F0" stroke-width="1.4"/><circle cx="9" cy="9" r="3.5" stroke="#5B50F0" stroke-width="1.4"/><circle cx="9" cy="9" r="1" fill="#5B50F0"/></svg></div>
+        <div class="awb-title">GTM Advisory</div>
+        <p class="awb-body">Operating Advisors embed directly with founders as trusted insiders — understanding the GTM motion, solving operational challenges, and scoping the talent the business actually needs.</p>
+      </div>
+      <div class="adv-what-block">
+        <div class="awb-icon-wrap"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="8" cy="8" r="5.5" stroke="#5B50F0" stroke-width="1.4"/><path d="M12.5 12.5L16 16" stroke="#5B50F0" stroke-width="1.4" stroke-linecap="round"/></svg></div>
+        <div class="awb-title">Candidate Evaluation</div>
+        <p class="awb-body">Advisors who've led the function or held the role evaluate our preferred candidates — applying pattern recognition from doing the job, not from interview rubrics</p>
+      </div>
+      
+    </div>
+    
+  </div>
+  <div class="team-op-grid" id="team-op-grid"></div>
+  <div class="team-op-section" aria-label="Team">
+
+    
+    <div class="team-op-advisor-strip" aria-label="Companies where advisors have led">
+      <p class="team-op-advisor-label">Companies where advisors have led</p>
+      <ul class="team-op-advisor-names">
+        <li class="team-op-advisor-name">Lattice</li>
+        <li class="team-op-advisor-name">Nooks</li>
+        <li class="team-op-advisor-name">Apollo</li>
+        <li class="team-op-advisor-name">Fyxer</li>
+        <li class="team-op-advisor-name">Clay</li>
+        <li class="team-op-advisor-name">Tennr</li>
+        <li class="team-op-advisor-name">Miro</li>
+        <li class="team-op-advisor-name">Vercel</li>
+        <li class="team-op-advisor-name">Laurel</li>
+        <li class="team-op-advisor-name">AgentSync</li>
+      </ul>
+    </div>
+  </div>
+</div><!-- /advisors-section -->
+
+
+<script>
+(function() {
+  function getSiteRoute(routeName) {
+    var isFileProtocol = window.location.protocol === 'file:';
+    var routes = {
+      home: isFileProtocol ? 'index.html' : '/',
+      advisors: isFileProtocol ? 'firsthand-Opearting-advisors.html' : '/advisors/',
+      'work-with-us': isFileProtocol ? 'index.html#get-started' : '/#get-started'
+    };
+    return routes[routeName] || routes.home;
+  }
+
+  window.getSiteRoute = getSiteRoute;
+
+  document.querySelectorAll('[data-route]').forEach(function(link) {
+    var routeName = link.getAttribute('data-route');
+    link.setAttribute('href', getSiteRoute(routeName));
+  });
+})();
+
+(function() {
+  /**
+   * Team roster — single source of truth for the grid below “BUILT BY OPERATORS”.
+   * Later: replace this array with `fetch('/api/team').then(r => r.json())` (or CMS)
+   * and pass the result into renderTeamOperatorGrid(grid, members).
+   *
+   * Fields:
+   *   id          — stable slug (URLs, analytics, keys)
+   *   name        — display name
+   *   title       — role line under the name
+   *   photoUrl    — portrait path, e.g. assets/team-ross-shanken.jpg (see filenames below)
+   *   badge       — optional small label (e.g. “Founder”)
+   *   linkedinUrl — full LinkedIn profile URL (card opens in a new tab)
+   *
+   * Expected files in /assets (JPEG or change extension in photoUrl):
+   *   team-ross-shanken.jpg, team-dini-mehta.jpg, team-john-sherer.jpg, team-todd-busler.jpg,
+   *   team-armand-farrokh.jpg, team-paul-canty.jpg, team-adam-carr.jpg, team-jonathon-blackburn.jpg,
+   *   team-cara-felleman.jpg, team-robby-allen.jpg
+   */
+  var TEAM_OPERATORS = [
+    { id: 'ross-shanken', name: 'Ross Shanken', title: 'Founder & Managing Partner', badge: 'Founder', photoUrl: 'assets/team-ross-shanken.jpeg', linkedinUrl: 'https://www.linkedin.com/in/ross-shanken/' },
+    { id: 'adam-carr', name: 'Adam Carr', title: 'CRO', photoUrl: 'assets/team-adam-carr.jpeg', linkedinUrl: 'https://www.linkedin.com/in/adamhcarr/' },
+    { id: 'john-sherer', name: 'John Sherer', title: 'CRO', photoUrl: 'assets/team-john-sherer.png', linkedinUrl: 'https://www.linkedin.com/in/johnsherer/' },
+    { id: 'todd-busler', name: 'Todd Busler', title: 'VP Sales', photoUrl: 'assets/team-todd-busler.png', linkedinUrl: 'https://www.linkedin.com/in/todd-busler/' },
+    { id: 'robby-allen', name: 'Robby Allen', title: 'CRO', photoUrl: 'assets/team-robby-allen.jpeg', linkedinUrl: 'https://www.linkedin.com/in/robbyallen/' },
+    { id: 'emily-dresser', name: 'Emily Dresser', title: 'VP Sales', photoUrl: 'assets/team-emily-dresser.jpeg', linkedinUrl: 'https://www.linkedin.com/in/emily-carpenter-dresser-12b28560/' },
+    { id: 'jonah-mandel', name: 'Jonah Mandel', title: 'SVP Sales', photoUrl: 'assets/team-jonah-mandel.jpeg', linkedinUrl: 'https://www.linkedin.com/in/jonah-mandel-654290a2/' },
+    { id: 'jonathon-blackburn', name: 'Jonathon Blackburn', title: 'CRO', photoUrl: 'assets/team-jonathon-blackburn.jpeg', linkedinUrl: 'https://www.linkedin.com/in/jonathon-blackburn-aa704a44/' },
+    { id: 'cara-felleman', name: 'Cara Felleman', title: 'CRO', photoUrl: 'assets/team-cara-felleman.jpeg', linkedinUrl: 'https://www.linkedin.com/in/carafelleman/' },
+    { id: 'and-more', type: 'and-more', href: 'firsthand-Opearting-advisors.html' }
+  ];
+
+  function renderTeamOperatorGrid(container, members) {
+    container.innerHTML = '';
+    members.forEach(function(m) {
+      if (m.type === 'and-more') {
+        var moreCard = document.createElement('a');
+        moreCard.className = 'team-op-card team-op-card--andmore';
+        moreCard.dataset.memberId = m.id;
+        moreCard.href = window.getSiteRoute ? window.getSiteRoute('advisors') : (m.href || 'firsthand-Opearting-advisors.html');
+        moreCard.setAttribute('aria-label', 'View all operating advisors');
+        var morePhoto = document.createElement('div');
+        morePhoto.className = 'team-op-photo';
+        var moreInner = document.createElement('div');
+        moreInner.className = 'team-op-andmore-inner';
+        var plus = document.createElement('span');
+        plus.className = 'team-op-andmore-plus';
+        plus.textContent = '+';
+        var label = document.createElement('span');
+        label.className = 'team-op-andmore-label';
+        label.textContent = 'and more';
+        moreInner.appendChild(plus);
+        moreInner.appendChild(label);
+        morePhoto.appendChild(moreInner);
+        moreCard.appendChild(morePhoto);
+        container.appendChild(moreCard);
+        return;
+      }
+
+      var card = document.createElement(m.linkedinUrl ? 'a' : 'div');
+      card.className = 'team-op-card';
+      card.dataset.memberId = m.id;
+      if (m.linkedinUrl) {
+        card.href = m.linkedinUrl;
+        card.target = '_blank';
+        card.rel = 'noopener noreferrer';
+        card.setAttribute('aria-label', m.name + ' — LinkedIn profile');
+      }
+
+      var photoWrap = document.createElement('div');
+      photoWrap.className = 'team-op-photo';
+      var img = document.createElement('img');
+      img.src = m.photoUrl;
+      img.alt = m.name;
+      img.width = 600;
+      img.height = 750;
+      img.loading = 'lazy';
+      img.decoding = 'async';
+      photoWrap.appendChild(img);
+      card.appendChild(photoWrap);
+
+      var nameRow = document.createElement('div');
+      nameRow.className = 'team-op-name-row';
+      var nameEl = document.createElement('span');
+      nameEl.className = 'team-op-name';
+      nameEl.textContent = m.name;
+      nameRow.appendChild(nameEl);
+      if (m.badge) {
+        var badge = document.createElement('span');
+        badge.className = 'team-op-badge';
+        badge.textContent = m.badge;
+        nameRow.appendChild(badge);
+      }
+      card.appendChild(nameRow);
+
+      var role = document.createElement('div');
+      role.className = 'team-op-role';
+      role.textContent = m.title;
+      card.appendChild(role);
+
+      container.appendChild(card);
+    });
+  }
+
+  var grid = document.getElementById('team-op-grid');
+  if (!grid) return;
+
+  renderTeamOperatorGrid(grid, TEAM_OPERATORS);
+
+  window.firsthandPartners = window.firsthandPartners || {};
+  /** @param members {Array} same shape as TEAM_OPERATORS; omit to re-render defaults */
+  window.firsthandPartners.renderTeamGrid = function(members) {
+    renderTeamOperatorGrid(grid, members && members.length ? members : TEAM_OPERATORS);
+  };
+})();
+</script>
+
+
+<div class="section section-bg">
+  <div class="section-tag">How We Work</div>
+  <h2 class="section-title">Search shaped by<br>lived experience.</h2>
+  <div class="how-quadrants">
+    <div class="how-quad">
+      <div class="hq-num">01</div>
+      <div class="hq-title">Understand the business, not just the brief.</div>
+      <p class="hq-body">Before we source a candidate, we get inside the company — the GTM motion, team gaps, what breaks at this stage. We ask the questions that only matter if you've been there.</p>
+    </div>
+    <div class="how-quad">
+      <div class="hq-num">02</div>
+      <div class="hq-title">Activate advisors who've held this exact role.</div>
+      <p class="hq-body">We bring in the relevant advisors from our network — operators in this precise function — to help define the success profile and participate in candidate evaluation.</p>
+    </div>
+    <div class="how-quad">
+      <div class="hq-num">03</div>
+      <div class="hq-title">Recruit peer-to-peer, not transactionally.</div>
+      <p class="hq-body">Our network was built in the field, from relationships working shoulder to shoulder. When we reach out, we've already pre-screened.</p>
+    </div>
+    <div class="how-quad">
+      <div class="hq-num">04</div>
+      <div class="hq-title">Stay past the close.</div>
+      <p class="hq-body">The first hire is just the beginning. Our operators help see around corners because they've seen the journey. So you can hire on-time every time.</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- APPLY V-B: Card selector -->
+<div class="vb-apply" id="get-started">
+  <div class="vb-header">
+    <div class="vb-tag">Get Started</div>
+    <h2 class="vb-title">One firm, three ways in.</h2>
+    <p class="vb-sub">Tell us where you're coming from — we'll take it from there.</p>
+  </div>
+  <div class="vb-cards">
+    <div class="vb-card" onclick="selectCard('hiring')" id="vb-card-hiring">
+      <div class="vb-card-icon" id="vb-icon-hiring">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="3" y="6" width="14" height="11" rx="1.5" stroke="#5B50F0" stroke-width="1.5"/><path d="M7 6V5a3 3 0 016 0v1" stroke="#5B50F0" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </div>
+      <div class="vb-card-label">For Companies</div>
+      <div class="vb-card-title">I'm Hiring</div>
+      <div class="vb-card-body">You're building a leadership team and need a search partner with firsthand experience.</div>
+    </div>
+    <div class="vb-card" onclick="selectCard('leader')" id="vb-card-leader">
+      <div class="vb-card-icon" id="vb-icon-leader">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="7" r="3.5" stroke="#5B50F0" stroke-width="1.5"/><path d="M3 18c0-3.866 3.134-7 7-7s7 3.134 7 7" stroke="#5B50F0" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </div>
+      <div class="vb-card-label">For Talent</div>
+      <div class="vb-card-title">I'm GTM Talent</div>
+      <div class="vb-card-body">You're a high-slope GTM professional open to the right move.</div>
+    </div>
+    <div class="vb-card" onclick="selectCard('advisor')" id="vb-card-advisor">
+      <div class="vb-card-icon" id="vb-icon-advisor">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="5" r="2.5" stroke="#5B50F0" stroke-width="1.5"/><circle cx="4" cy="15" r="2.5" stroke="#5B50F0" stroke-width="1.5"/><circle cx="16" cy="15" r="2.5" stroke="#5B50F0" stroke-width="1.5"/><path d="M10 7.5v3M10 10.5l-4.5 3M10 10.5l4.5 3" stroke="#5B50F0" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </div>
+      <div class="vb-card-label">Join the Network</div>
+      <div class="vb-card-title">I'm an Advisor</div>
+      <div class="vb-card-body">You've held the seat. Now help shape founders and talent for success.</div>
+    </div>
+  </div>
+
+  <div class="vb-form-area" id="vb-form-area">
+    <div class="vb-form-inner">
+
+      <!-- FORMS -->
+      <div class="vb-form-right">
+        <!-- Hiring form -->
+        <form class="vb-form-panel active" id="vb-form-hiring">
+          <input type="hidden" name="formType" value="hiring">
+          <div class="vb-form-row">
+            <div><label class="vb-label">Name</label><input class="vb-input" type="text" name="name" placeholder="First Last" required></div>
+            <div><label class="vb-label">Email</label><input class="vb-input" type="email" name="email" placeholder="you@company.com" required></div>
+          </div>
+          <div><label class="vb-label">Company</label><input class="vb-input" type="text" name="company" placeholder="Company name"></div>
+          <div><label class="vb-label">Your LinkedIn URL</label><input class="vb-input" type="url" name="linkedin" placeholder="linkedin.com/in/yourname"></div>
+          <div><label class="vb-label">Tell us more</label><textarea class="vb-textarea" name="message" placeholder="Stage, GTM motion, what's broken, timeline..."></textarea></div>
+          <button class="vb-submit" type="submit">Submit</button>
+          <div class="vb-form-status" aria-live="polite"></div>
+        </form>
+        <!-- Leader form -->
+        <form class="vb-form-panel" id="vb-form-leader">
+          <input type="hidden" name="formType" value="leader">
+          <div class="vb-form-row">
+            <div><label class="vb-label">Name</label><input class="vb-input" type="text" name="name" placeholder="First Last" required></div>
+            <div><label class="vb-label">Email</label><input class="vb-input" type="email" name="email" placeholder="you@company.com" required></div>
+          </div>
+          <div><label class="vb-label">LinkedIn</label><input class="vb-input" type="text" name="linkedin" placeholder="linkedin.com/in/yourname"></div>
+          <div><label class="vb-label">What are you looking for?</label><textarea class="vb-textarea" name="preferences" placeholder="Role type, stage, geography, timeline..."></textarea></div>
+          <button class="vb-submit" type="submit">Submit</button>
+          <div class="vb-form-status" aria-live="polite"></div>
+        </form>
+        <!-- Advisor form -->
+        <form class="vb-form-panel" id="vb-form-advisor">
+          <input type="hidden" name="formType" value="advisor">
+          <div class="vb-form-row">
+            <div><label class="vb-label">Name</label><input class="vb-input" type="text" name="name" placeholder="First Last" required></div>
+            <div><label class="vb-label">Email</label><input class="vb-input" type="email" name="email" placeholder="you@company.com" required></div>
+          </div>
+          <div><label class="vb-label">LinkedIn</label><input class="vb-input" type="text" name="linkedin" placeholder="linkedin.com/in/yourname"></div>
+          <button class="vb-submit" type="submit">Apply to Advise</button>
+          <div class="vb-form-status" aria-live="polite"></div>
+        </form>
+      </div>
+
+      <!-- STEALTH BOX (below form, hidden for advisor) -->
+      <div class="vb-form-left">
+        <div class="vb-form-panel active" id="vb-left-hiring">
+          <div class="stealth-cta-box">
+            <a class="stealth-cta-label" href="https://stealthjobs.co" target="_blank" style="text-decoration:none;">Also on StealthJobs.co</a>
+            <div class="stealth-cta-heading">Your role, seen by operators who aren't on the market yet.</div>
+            <p class="stealth-cta-sub">Reach accomplished leaders who are privately open to the right move, before they surface anywhere else. Every candidate in your pipeline has already said yes.</p>
+            <a class="stealth-cta-link" href="https://stealthjobs.co" target="_blank" style="margin-top:10px;">Post your role at StealthJobs.co →</a>
+          </div>
+        </div>
+        <div class="vb-form-panel" id="vb-left-leader">
+          <div class="stealth-cta-box">
+            <a class="stealth-cta-label" href="https://stealthjobs.co" target="_blank" style="text-decoration:none;">StealthJobs.co — For Operators</a>
+            <div class="stealth-cta-heading">Your next move is already waiting.</div>
+            <p class="stealth-cta-sub">StealthJobs.co surfaces roles that never get posted publicly. Backed by Firsthand Partners, every opportunity is curated for GTM operators — matched to your level, stage, and function. No noise. No outreach. Just the right opportunity when it's ready.</p>
+            <a class="stealth-cta-link" href="https://stealthjobs.co" target="_blank" style="margin-top:10px;">Explore roles at StealthJobs.co →</a>
+          </div>
+        </div>
+        <div class="vb-form-panel" id="vb-left-advisor"></div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- BOTTOM STATEMENT -->
+<div class="bottom-statement">
+  <div class="bs-top">
+    <h2 class="bs-text">BUILT BY OPERATORS<br><span class="violet">BACKED BY EXPERIENCE.</span></h2>
+    <div class="bs-right">
+      <div style="display: flex; gap: 12px;">
+        <a class="bs-btn" href="#get-started" data-route="work-with-us">Work With Us</a>
+        <a class="bs-btn" href="https://stealthjobs.co" target="_blank">Jobs</a>
+      </div>
+      <span class="bs-email">info@firsthandpartners.com</span>
+      <a class="bs-stealth-link2" href="https://stealthjobs.co" target="_blank">Leaders: explore open roles at stealthjobs.co →</a>
+    </div>
+  </div>
+
+</div>
+<script>
+// Paste your Apps Script Web App URL here after deploying (see google-apps-script.gs).
+const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyZ2B-BSeh0dJIuh9Az01R1ESbZNaBCZc2XF6q8t0NqzUkKUkcdPhGwwjutcOXGWrT0_A/exec";
+
+function selectCard(type) {
+  ['hiring','leader','advisor'].forEach(function(t) {
+    document.getElementById('vb-card-'+t).classList.remove('selected');
+    var fp = document.getElementById('vb-form-'+t);
+    var lp = document.getElementById('vb-left-'+t);
+    if(fp) fp.classList.remove('active');
+    if(lp) lp.classList.remove('active');
+  });
+  document.getElementById('vb-card-'+type).classList.add('selected');
+  var sf = document.getElementById('vb-form-'+type);
+  var sl = document.getElementById('vb-left-'+type);
+  if(sf) sf.classList.add('active');
+  if(sl) sl.classList.add('active');
+  var area = document.getElementById('vb-form-area');
+  area.classList.add('open');
+  setTimeout(function() {
+    var rect = area.getBoundingClientRect();
+    var scrollTop = window.pageYOffset + rect.top - 80;
+    window.scrollTo({ top: scrollTop, behavior: 'smooth' });
+  }, 60);
+}
+
+['vb-form-hiring','vb-form-leader','vb-form-advisor'].forEach(function(id) {
+  var form = document.getElementById(id);
+  if (!form) return;
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    var status = form.querySelector('.vb-form-status');
+    var btn = form.querySelector('.vb-submit');
+    if (!APPS_SCRIPT_URL) {
+      status.textContent = 'Form is not configured yet. Please try again later.';
+      status.style.color = '#c0392b';
+      return;
+    }
+    btn.disabled = true;
+    var originalText = btn.textContent;
+    btn.textContent = 'Sending...';
+    status.textContent = '';
+    try {
+      var res = await fetch(APPS_SCRIPT_URL, {
+        method: 'POST',
+        body: new URLSearchParams(new FormData(form))
+      });
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      var data = await res.json().catch(function(){ return { ok:true }; });
+      if (data && data.ok === false) throw new Error(data.error || 'submission failed');
+      form.reset();
+      status.textContent = "Thanks — we got it. We'll be in touch.";
+      status.style.color = '#2d7a4a';
+      btn.textContent = 'Sent';
+    } catch (err) {
+      status.textContent = "Sorry, something went wrong. Please try again or email info@firsthandpartners.com.";
+      status.style.color = '#c0392b';
+      btn.disabled = false;
+      btn.textContent = originalText;
+    }
+  });
+});
+
+var navMenuToggle = document.getElementById('nav-menu-toggle');
+var navMobileMenu = document.getElementById('nav-mobile-menu');
+var navMobileOverlay = document.getElementById('nav-mobile-overlay');
+if (navMenuToggle && navMobileMenu) {
+  function closeMobileMenu() {
+    navMobileMenu.classList.remove('open');
+    navMenuToggle.setAttribute('aria-expanded', 'false');
+    navMobileMenu.setAttribute('aria-hidden', 'true');
+    if (navMobileOverlay) {
+      navMobileOverlay.classList.remove('open');
+      navMobileOverlay.setAttribute('aria-hidden', 'true');
+    }
+  }
+  navMenuToggle.addEventListener('click', function() {
+    var isOpen = navMobileMenu.classList.toggle('open');
+    navMenuToggle.setAttribute('aria-expanded', String(isOpen));
+    navMobileMenu.setAttribute('aria-hidden', String(!isOpen));
+    if (navMobileOverlay) {
+      navMobileOverlay.classList.toggle('open', isOpen);
+      navMobileOverlay.setAttribute('aria-hidden', String(!isOpen));
+    }
+  });
+  navMobileMenu.querySelectorAll('a').forEach(function(link) {
+    link.addEventListener('click', function() {
+      navMobileMenu.querySelectorAll('a').forEach(function(other) {
+        other.classList.remove('is-active');
+      });
+      link.classList.add('is-active');
+      closeMobileMenu();
+    });
+  });
+  if (navMobileOverlay) {
+    navMobileOverlay.addEventListener('click', closeMobileMenu);
+  }
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && navMobileMenu.classList.contains('open')) closeMobileMenu();
+  });
+}
+</script>
+
+<footer>
+  <div class="footer-logo">
+    <div class="footer-circle">FP</div>
+    <span class="footer-name">Firsthand Partners</span>
+  </div>
+  <span class="footer-copy">© 2026 Firsthand Partners. All rights reserved.</span>
+</footer>
+</body>
+</html>
